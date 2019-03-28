@@ -54,7 +54,7 @@ An item is an individual item from an RSS feed.
 | `summary`     | HTML String. The summar of this item.                              | No       |
 | `url`         | URL. The original URL of this item.                                | Yes      |
 | `service_url` | URL. The URL of this item on the aggregation service.              | No       |
-| `read`        | Boolean. Whether this item has been marked as read..               | No       |
+| `read`        | Boolean. Whether this item has been marked as read.                | No       |
 
 ## Group
 A group contains multiple feeds.
@@ -66,3 +66,4 @@ Feeds may or may not belong to multiple groups, depending on the service impleme
 | `id`           | ID. The ID of this group.                                     | Yes      |
 | `title`        | String. The title/name of this group.                         | Yes      |
 | `feed_ids`     | Array of IDs. The IDs of the feeds that this group contains.  | Yes      |
+| `service_url`  | URL. The URL of this group on the aggregation service.        | No       |
