@@ -28,7 +28,7 @@ Parameters should be sent as `application/x-www-form-urlencoded` in the POST bod
 | `website`      | URL. The URL of your client or homepage. May be presented to the user. | No       |
 | `redirect_uri` | URI. The URI the redirected to after a successful login.               | Yes      |
 
-The redirect URI must not include a fragment, and may include query parameters.
+The redirect URI must not include a fragment, and may include query parameters. The redirect URI may be the special `urn:ietf:wg:oauth:2.0:oob` string to indicate that server should show the authorization code on the web page, instead of performing a redirect.
 
 #### Response
 An object with the client ID and secret to be used when retrieving an authorization code.
