@@ -33,3 +33,8 @@ For example, an extended item object:
 Extensions may also provide additional API endpoints that provide access to their specific data. To avoid name conflicts, all extension endpoints should be under `/api/<identifier>/`.
 
 For example, the `com.example.fervor.tags` extension may provide a GET endpoint at `/api/com.example.fervor.tags/v1/tags` that returns an array of all tag objects.
+
+## Extended Requests
+Extensions may also accept additional parameters in Fervor requests. To avoid name conflicts, all extension parameters should be prefixed with the extension identifier.
+
+For example, the `com.example.fervor.tags` extension may extend the feed creation endpoint with a `com.example.fervor.tags.new` parameter that accepts a list of tags to assign to the newly created feed.
