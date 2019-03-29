@@ -59,7 +59,7 @@ Deletes the group with the given ID. In some server implementations, this reques
 
 No parameters.
 
-If successful, the server will respond with an HTTP 410 Gone response.
+If successful, the server will respond with an HTTP 204 No Content response.
 
 ## Feeds
 ### `GET /api/v1/feeds/`
@@ -99,7 +99,7 @@ Deletes the feed with the given ID.
 
 No parameters.
 
-If successful, the server will return respond with an HTTP 410 Gone response.
+If successful, the server will return respond with an HTTP 204 No Content response.
 
 ## Items
 ### `GET /api/v1/items`
