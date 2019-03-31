@@ -118,8 +118,12 @@ Returns the Item object for the given ID.
 ### `POST /api/v1/items/:id/read`
 Marks the Item with the given ID as read.
 
+Returns the modified Item object.
+
 ### `POST /api/v1/items/:id/unread`
 Marks the Item with the given ID as unread.
+
+Returns the modified Item object.
 
 ### `POST /api/v1/items/read`
 Marks all Items with the given IDs as read.
